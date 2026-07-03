@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO Meta Tags -->
+    <title>Sky Explorer Travel & Tourism Managment</title>
+    <meta name="description" content="Discover beautiful destinations, exciting adventures, and memorable travel experiences with Sky Explorer.">
+    <meta name="keywords" content="travel gallery, travel photos, landscape photography, vacation pictures, tourism highlights">
+    <meta name="author" content="Krishna Kant Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Virtual Travel Gallery by Sky Explorer">
+    <meta property="og:description" content="See real photos of our guided tour routes. Mountain ranges, clear oceans, and historical architecture.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" id="mainLogo">
+                <i class="fas fa-compass"></i>Sky Explorer
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="booking.html" class="nav-cta btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery Intro -->
+        <section class="section" style="padding-top: calc(var(--navbar-height) + 4rem); background-color: var(--primary-light);">
+            <div class="container text-center max-w-600">
+                <span class="badge">Visual Inspiration</span>
+                <h1>Sky Explorer Gallery</h1>
+                <p style="color: var(--gray-dark);">A collection of real snapshots captured during our guided tours. Let these breathtaking views inspire your next journey.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid --> 
+        <section class="section" id="gallerySection"> 
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Item 1 (Wide) -->
+                    <div class="gallery-item wide"> 
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Araku Valley Hills" >
+                        <div class="gallery-overlay">
+                            <h3>Araku Valley</h3>
+                            <p>Enjoy the beautiful hills, waterfalls and coffee plantations of Araku Valley.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 (Tall) -->
+                    <div class="gallery-item tall">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" style="height:200px; width:100%; object-fit:cover;">
+                        <div class="gallery-overlay">
+                            <h3>Goa Beach</h3>
+                            <p>Relax on Goa's famous beaches and enjoy exciting water sports.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963" style="height:200px; width:100%; object-fit:cover;">
+                        <div class="gallery-overlay">
+                            <h3>Hampi Heritage</h3>
+                            <p>Explore the historic temples and monuments of Hampi, Karnataka.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80" >
+                        <div class="gallery-overlay">
+                            <h3>Charminar</h3>
+                            <p>Visit the famous Charminar and experience the culture of Hyderabad.</p>
+                        </div>
+                    </div>   
+                    
+                    <!-- Item 5 (Wide) -->
+                    <div class="gallery-item wide">
+                        <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=300&q=80" alt="Ooty Hill Station">
+                        <div class="gallery-overlay">
+                            <h3>Ooty Hills</h3>
+                            <p>Enjoy the cool climate, tea gardens and scenic beauty of Ooty.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="gallery-item"> 
+                        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" style="height:200px; width:100%; object-fit:cover;">
+                        <div class="gallery-overlay">
+                            <h3>Vizag Beach</h3>
+                            <p>Experience the peaceful coastline and beautiful sunrise at Vizag Beach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+            <button class="lightbox-close" aria-label="Close Preview">&times;</button>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img">
+                <p class="lightbox-caption"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color: #ffffff;">
+                        <i class="fas fa-compass" style="color: var(--primary);"></i> Sky Explorer
+                    </a>
+                    <p>Creating authentic, sustainable, and highly memorable travel experiences for adventurers worldwide since 2012.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="gallery.html">Visual Gallery</a></li>
+                        <li><a href="booking.html">Book Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Specialties</h3>
+                    <ul class="footer-links">
+                        <li><a href="packages.html">Mountain Trekking</a></li>
+                        <li><a href="packages.html">Beach Resorts</a></li>
+                        <li><a href="packages.html">Historical Temples</a></li>
+                        <li><a href="packages.html">Wildlife Safaris</a></li>
+                        <li><a href="packages.html">Eco Tourism</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive travel promotions, seasonal flight tips, and local secrets in your inbox.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Email for Newsletter" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Sky Explorer.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Live Chat Widget Container -->
+    <div class="chat-widget-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

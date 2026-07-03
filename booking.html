@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO Meta Tags -->
+    <title>Book Your Sky Explorer Tour</title>
+    <meta name="description" content="Book your dream vacation with Sky Explorer. Choose your destination, travel date, and enjoy a memorable journey with us..">
+    <meta name="keywords" content="book travel, tour booking, reservation, travel package booking, tour booking online">
+    <meta name="author" content="Krishna Kant Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book a Guided Adventure with Sky Explorer">
+    <meta property="og:description" content="Secure booking. Select your destination, preferred dates, and traveler details for instant confirmation.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" id="mainLogo">
+                <i class="fas fa-compass"></i> Sky Explorer
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="packages.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="booking.html" class="nav-link active">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Booking Intro -->
+        <section class="section" style="padding-top: calc(var(--navbar-height) + 4rem); background-color: var(--primary-light);">
+            <div class="container text-center max-w-600">
+                <span class="badge">Tour Reservations</span>
+                <h1>Reserve Your Next Adventure</h1>
+                <p style="color: var(--gray-dark);">Fill out the details below. Our booking engine will instantly check spot availability and generate your registration details.</p>
+            </div>
+        </section>
+
+        <!-- Booking Section Form -->
+        <section class="section" id="bookingFormSection">
+            <div class="container">
+                <div class="booking-container">
+                    
+                    <!-- Form Area -->
+                    <div class="booking-form-wrapper">
+                        <h2 class="form-title">Tour Booking Inquiry Form</h2>
+                        <form id="bookingForm" novalidate>
+                            <div class="form-grid">
+                                <!-- Full Name -->
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                                    <span class="error-message">This field is required</span>
+                                </div>
+                                
+                                <!-- Email Address -->
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" class="form-control" placeholder="john.doe@example.com" required>
+                                    <span class="error-message">Enter a valid email address</span>
+                                </div>
+                                
+                                <!-- Phone Number -->
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="10-digit number" required>
+                                    <span class="error-message">Enter a valid 10-digit number</span>
+                                </div>
+                                
+                                <!-- Selected Package -->
+                                <div class="form-group">
+                                    <label for="tourPackage">Select Tour Package *</label>
+                                    <select id="tourPackage" class="form-control" required>
+                                        <option value="">-- Choose Destination --</option>
+                                        <option value="Araku Valley">Araku Valley ($15,999)</option>
+                                        <option value="Goa Beach">Goa Beach ($12,999)</option>
+                                        <option value="Hampi">Hampi ($18,999)</option>
+                                        <option value="Ooty">Ooty ($15,999)</option>
+                                        <option value="Hyderabad">Hyderabad ($8,999)</option>
+                                        <option value="Vizag">Vizag ($10,199)</option>
+                                    </select>
+                                    <span class="error-message">This field is required</span>
+                                </div>
+                                
+                                <!-- Preferred Date -->
+                                <div class="form-group">
+                                    <label for="travelDate">Departure Date *</label>
+                                    <input type="date" id="travelDate" class="form-control" required>
+                                    <span class="error-message">This field is required</span>
+                                </div>
+                                
+                                <!-- Group Size -->
+                                <div class="form-group">
+                                    <label for="groupSize">Number of Travelers *</label>
+                                    <select id="groupSize" class="form-control" required>
+                                        <option value="">-- Choose Size --</option>
+                                        <option value="1">1 Traveler</option>
+                                        <option value="2">2 Travelers</option>
+                                        <option value="3-5">3 - 5 Travelers</option>
+                                        <option value="6-9">6 - 9 Travelers</option>
+                                        <option value="10+">10+ Group Travelers</option>
+                                    </select>
+                                    <span class="error-message">This field is required</span>
+                                </div>
+                                
+                                <!-- Special Requests -->
+                                <div class="form-group full-width">
+                                    <label for="requests">Special Dietary or Room Requirements (Optional)</label>
+                                    <textarea id="requests" class="form-control" rows="4" placeholder="Vegetarian options, ground-floor accessibility requirements, double-bed preference, etc..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Tour Booking Request</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Sidebar Info Cards -->
+                    <div class="booking-info-card">
+                        <h3>Our Booking Guarantees</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-undo-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Flexible Booking</h4>
+                                    <p>Change your travel date easily before your scheduled trip.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Quick Confirmation</h4>
+                                    <p>Your booking request will be confirmed as soon as possible.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Travel Assistance</h4>
+                                    <p>Our team is always ready to help you plan a safe and enjoyable trip.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Success Confirmation Modal -->
+        <div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+            <div class="modal-box">
+                <div class="modal-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="modalHeading">Tour Booking Requested!</h2>
+                <p>Your tour inquiry has been successfully registered. Please find your details below:</p>
+                
+                <div class="modal-details">
+                    <p><strong>Reference Number:</strong> <span id="modalRefNo"></span></p>
+                    <p><strong>Traveler Name:</strong> <span id="modalPatientName"></span></p>
+                    <p><strong>Selected Tour:</strong> <span id="modalDeptDoctor"></span></p>
+                    <p><strong>Details & Date:</strong> <span id="modalDateTime"></span></p>
+                </div>
+                
+                <p style="font-size: 0.85rem; color: var(--gray-dark); margin-bottom: 1.5rem;">We have sent a comprehensive itinerary PDF and payment gateway link to your email address.</p>
+                
+                <button class="btn btn-primary" id="modalCloseBtn" style="width: 100%;">Done</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color: #ffffff;">
+                        <i class="fas fa-compass" style="color: var(--primary);"></i> Sky Explorer
+                    </a>
+                    <p>Creating authentic, sustainable, and highly memorable travel experiences for adventurers worldwide since 2012.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="gallery.html">Visual Gallery</a></li>
+                        <li><a href="booking.html">Book Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Specialties</h3>
+                    <ul class="footer-links">
+                        <li><a href="packages.html">Mountain Trekking</a></li>
+                        <li><a href="packages.html">Beach Resorts</a></li>
+                        <li><a href="packages.html">Historical Temples</a></li>
+                        <li><a href="packages.html">Wildlife Safaris</a></li>
+                        <li><a href="packages.html">Eco Tourism</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive travel promotions, seasonal flight tips, and local secrets in your inbox.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Email for Newsletter" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Explorer. All rights reserved. Designed for MANTRA 2026 Assignment.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Live Chat Widget Container -->
+    <div class="chat-widget-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

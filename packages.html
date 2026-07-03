@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO Meta Tags -->
+    <title>Sky Explorer Tour</title>
+    <meta name="description" content="Browse our selected tour packages. Filter by travel style: hiking adventures, sandy beaches, or cultural exploration. Instant online booking.">
+    <meta name="keywords" content="tour packages, travel package, hiking, beach vacation, cultural tour, booking travel deals">
+    <meta name="author" content="Krishna Kant Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curated Travel Packages and Guided Tours">
+    <meta property="og:description" content="Exotic beach holidays, wild safaris, and active hiking. Browse details, inclusions, and prices.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" id="mainLogo">
+                <i class="fas fa-compass"></i> Sky Explorer
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="packages.html" class="nav-link active">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="booking.html" class="nav-cta btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Packages Banner -->
+        <section class="section" style="padding-top: calc(var(--navbar-height) + 4rem); background-color: var(--primary-light);">
+            <div class="container text-center max-w-600">
+                <span class="badge">Travel Offers</span>
+                <h1>Our Curated Tour Packages</h1>
+                <p style="color: var(--gray-dark);">We design our trips to offer a balanced blend of guided sightseeing, free discovery, and comfortable lodging.</p>
+            </div>
+        </section>
+
+        <!-- Packages Filter Grid -->
+        <section class="section" id="packagesSection">
+            <div class="container">
+                <!-- Filters -->
+                <div class="filters-container">
+                    <button class="filter-btn active" data-filter="all">Show All</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure</button>
+                    <button class="filter-btn" data-filter="beaches">Beaches</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                </div>
+                
+                <!-- Destination Grid -->
+                <div class="destinations-grid">
+                    <!-- Package 1 (Adventure) -->
+                    <article class="destination-card" data-category="adventure">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Araku Valley Hills">
+                            <span class="destination-tag">Adventure</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Araku Valley Tour</h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Andhra pradesh, India
+                            </div>
+                            <p class="destination-description">Experience epic trails, view panoramic glaciers, and relax in cozy high-altitude wooden chalets with expert alpine guides.</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 7 Days</span>
+                                    <span><i class="far fa-user"></i> Max 12</span>
+                                </div>
+                                <div class="destination-price">
+                                    $9,999<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Package 2 (Beaches) -->
+                    <article class="destination-card" data-category="beaches">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" style="height:200px; width:100%; object-fit:cover;">
+                            <span class="destination-tag">Beaches</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Goa, India</h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Goa, India
+                            </div>
+                            <p class="destination-description">Relax on pristine turquoise beaches, explore ancient forest temples, and refresh your mind with custom yoga and spa wellness.</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 6 Days</span>
+                                    <span><i class="far fa-user"></i> Max 15</span>
+                                </div>
+                                <div class="destination-price">
+                                    $10,999<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Package 3 (Cultural) -->
+                    <article class="destination-card" data-category="cultural">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963" style="height:200px; width:100%; object-fit:cover;">
+                            <span class="destination-tag">Cultural</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Hampi Heritage Tour</h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Karnataka, India
+                            </div>
+                            <p class="destination-description">Explore Hampi's iconic temples and heritage monuments, showcasing the rich history and architectural brilliance of the Vijayanagara Empire.</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 8 Days</span>
+                                    <span><i class="far fa-user"></i> Max 10</span>
+                                </div>
+                                <div class="destination-price">
+                                    $12,999<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Package 4 (Adventure) -->
+                    <article class="destination-card" data-category="adventure">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80">
+                            <span class="destination-tag">Adventure</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Charminar</h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Masai Mara, Kenya
+                            </div>
+                            <p class="destination-description">Visit the iconic Charminar in Hyderabad, a historic monument known for its stunning architecture, rich heritage, and vibrant local markets.</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 6 Days</span>
+                                    <span><i class="far fa-user"></i> Max 8</span>
+                                </div>
+                                <div class="destination-price">
+                                    $3,999<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Package 5 (Cultural) -->
+                    <article class="destination-card" data-category="cultural">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=300&q=80" alt="Ooty Hill Station">
+                            <span class="destination-tag">Cultural</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Ooty hills </h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Paris, France
+                            </div>
+                            <p class="destination-description">Enjoy the vibrant beaches of Goa, known for their scenic coastline, water sports, nightlife, and unforgettable sunset views.</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 5 Days</span>
+                                    <span><i class="far fa-user"></i> Max 12</span>
+                                </div>
+                                <div class="destination-price">
+                                    $6,999<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Package 6 (Beaches) -->
+                    <article class="destination-card" data-category="beaches">
+                        <div class="destination-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" style="height:200px; width:100%; object-fit:cover;">
+                            <span class="destination-tag">Beaches</span>
+                            <span class="destination-rating"><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Vizag Beach</h3>
+                            <div class="destination-location">
+                                <i class="fas fa-map-marker-alt"></i> Malé, Maldives
+                            </div>
+                            <p class="destination-description">Relax at the beautiful beaches of Visakhapatnam, offering breathtaking sea views, golden sands, and exciting coastal attractions..</p>
+                            <div class="destination-footer">
+                                <div class="destination-details">
+                                    <span><i class="far fa-clock"></i> 5 Days</span>
+                                    <span><i class="far fa-user"></i> Max 6</span>
+                                </div>
+                                <div class="destination-price">
+                                    $5,199<span>/person</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book This Tour</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="color: #ffffff;">
+                        <i class="fas fa-compass" style="color: var(--primary);"></i> Sky Explorer
+                    </a>
+                    <p>Creating authentic, sustainable, and highly memorable travel experiences for adventurers worldwide since 2012.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="gallery.html">Visual Gallery</a></li>
+                        <li><a href="booking.html">Book Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Specialties</h3>
+                    <ul class="footer-links">
+                        <li><a href="packages.html">Mountain Trekking</a></li>
+                        <li><a href="packages.html">Beach Resorts</a></li>
+                        <li><a href="packages.html">Historical Temples</a></li>
+                        <li><a href="packages.html">Wildlife Safaris</a></li>
+                        <li><a href="packages.html">Eco Tourism</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive travel promotions, seasonal flight tips, and local secrets in your inbox.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Email for Newsletter" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Explorer</Em>. All rights reserved. Designed for MANTRA 2026 Assignment.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Live Chat Widget Container -->
+    <div class="chat-widget-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
