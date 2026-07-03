@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sky-explorers-management.netlify.app/sitemap.xml
